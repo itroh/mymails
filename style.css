@@ -10,6 +10,7 @@ body {
 h6 {
     font-size: 14px;
     margin: 0px;
+    justify-self: left;
 }
 .trash {
     width : 15px;
@@ -44,6 +45,7 @@ h6 {
     display:flex;
     align-items:center;
     padding: 15px;
+    justify-content: stretch;
 
 
   }
@@ -81,3 +83,6 @@ h6 {
 .btn-blue:focus {
     outline:0;
   }
+.content{
+    width:100%
+}

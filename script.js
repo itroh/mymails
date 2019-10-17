@@ -56,6 +56,9 @@ function nouveauMail(contenuMessage){
     newDiv2.appendChild(textMessage);
     
     //ajout de la div
+    var attrDiv2Class=document.createAttribute("class");
+    attrDiv2Class.value="content";
+    newDiv2.setAttributeNode(attrDiv2Class);
     newDiv.appendChild(newDiv2);
 
     //place la div au bon endroit
