@@ -32,12 +32,16 @@ function nouveauMail(contenuMessage){
    
     // Avatar
     var newImg=document.createElement("img");
-    var attrImgClass=document.createAttribute("class");
-    attrImgClass.value="avatar";
-    newImg.setAttributeNode(attrImgClass);
-    var attrImgSrc=document.createAttribute("src");
-    attrImgSrc.value="avatar-1.jpg";
-    newImg.setAttributeNode(attrImgSrc);
+    newImg.setAttribute("class","avatar");
+    newImg.setAttribute("src","avatar-2.jpg");
+    //newImg.className="avatar";
+        //    var attrImgClass=document.createAttribute("class");
+        //  attrImgClass.value="avatar";
+            //newImg.setAttributeNode(attrImgClass);
+    //newImg.src='avatar-2.jpg'
+        // var attrImgSrc=document.createAttribute("src");
+            //attrImgSrc.value="avatar-1.jpg";
+            //newImg.setAttributeNode(attrImgSrc);
     //placement img ds div
     newDiv.appendChild(newImg);
         
