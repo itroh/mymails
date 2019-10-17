@@ -1,0 +1,82 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F6FA;
+    font-size: 14px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h6 {
+    font-size: 14px;
+    margin: 0px;
+}
+.trash {
+    width : 15px;
+    cursor: pointer;
+
+}
+.avatar {
+    width : 60px;
+    border-radius: 50%;
+    margin-right:15px;
+
+}
+.first-row{
+    border-top: 1px solid #DADADA ;
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    background-color: #FFFFFF;
+    width : 50%;
+    display:flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 15px;
+    
+}
+.row {
+    border-top: 1px solid #DADADA ;
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    background-color: #FFFFFF;
+    width : 50%;
+    display:flex;
+    align-items:center;
+    padding: 15px;
+
+
+  }
+.last-row {
+    border-bottom: 1px solid #DADADA;
+}
+#count{
+    font-weight:bold;
+}
+
+.new-message-row{
+    border-top: 1px solid #DADADA ;
+    border-right: 1px solid #DADADA;
+    border-left: 1px solid #DADADA;
+    background-color: #FFFFFF;
+    width : 50%;
+    display:flex;
+    align-items:center;
+    padding: 15px;
+}
+#add-message{
+    margin-right: 50px;
+    width: 80%;
+    font-size: 12px;
+    padding:5px;
+}
+.btn-blue{
+    border-color: cadetblue;
+    color: cadetblue;
+    font-size: 16px;
+    padding:5px;
+    border-radius: 10%;
+    font-weight: normal;
+}
+.btn-blue:focus {
+    outline:0;
+  }
