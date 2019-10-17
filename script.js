@@ -9,8 +9,7 @@ for(var i =0;i<document.getElementsByClassName('trash').length;i++){
     document.getElementsByClassName('trash')[i].addEventListener("click",function(){
         this.parentNode.remove();
         document.getElementsByClassName('row')[document.getElementsByClassName('row').length-1].style.borderBottom = "1px solid #DADADA";
-        nbrMessage = document.getElementsByClassName('row').length;
-        document.getElementById('count').textContent = nbrMessage;
+        document.getElementById('count').textContent = document.getElementsByClassName('row').length;
 
     });
 }
@@ -43,21 +42,21 @@ function nouveauMail(contenuMessage){
     newDiv.appendChild(newImg);
         
     // gestion nom
-   var newDiv2=document.createElement("div");
-   var nomAvatar=document.createElement("h6")
-   nomAvatar.textContent="Hortense Guéneau";
-   newDiv2.appendChild(nomAvatar);
+    var newDiv2=document.createElement("div");
+    var nomAvatar=document.createElement("h6")
+    nomAvatar.textContent="Hortense Guéneau";
+    newDiv2.appendChild(nomAvatar);
 
-   //gestion texte du message
-   var textMessage=document.createElement("p")
-   var attrMsgClass=document.createAttribute("class");
-   attrMsgClass.value="descr";
-   textMessage.setAttributeNode(attrMsgClass);
-   textMessage.textContent=contenuMessage;
-   newDiv2.appendChild(textMessage);
-   
-   //ajout de la div
-   newDiv.appendChild(newDiv2);
+    //gestion texte du message
+    var textMessage=document.createElement("p")
+    var attrMsgClass=document.createAttribute("class");
+    attrMsgClass.value="descr";
+    textMessage.setAttributeNode(attrMsgClass);
+    textMessage.textContent=contenuMessage;
+    newDiv2.appendChild(textMessage);
+    
+    //ajout de la div
+    newDiv.appendChild(newDiv2);
 
     //place la div au bon endroit
     var placement=document.getElementsByClassName("row")[0];
@@ -70,8 +69,15 @@ function nouveauMail(contenuMessage){
     var attrTrashSrc=document.createAttribute("src");
     attrTrashSrc.value="trash.png";
     newTrash.setAttributeNode(attrTrashSrc);
+    newTrash.addEventListener("click",function(){
+        this.parentNode.remove();
+        document.getElementsByClassName('row')[document.getElementsByClassName('row').length-1].style.borderBottom = "1px solid #DADADA";
+        document.getElementById('count').textContent = document.getElementsByClassName('row').length;
+    })
     newDiv.appendChild(newTrash);
-    
+
+    //MAJ compteur msg
+    document.getElementById('count').textContent = document.getElementsByClassName('row').length;
 
 
 }
